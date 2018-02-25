@@ -1,0 +1,187 @@
+
+1.Which of the following is not a legal identifier? Select the one correct answer.
+
+a.a2z
+b.ödipus
+c.52pickup
+d._class
+e.ca$h
+f.total#
+
+
+
+2.Which statement is true? Select the one correct answer.
+
+a.new and delete are keywords in the Java language.
+b.try, catch, and thrown are keywords in the Java language.
+c.static, unsigned, and long are keywords in the Java language.
+d.exit, class, and while are keywords in the Java language.
+e.return, goto, and default are keywords in the Java language.
+f.for, while, and next are keywords in the Java language.
+
+
+
+3.Is this a complete and legal comment? Select the one correct answer.
+ /* // */
+ 
+
+a.No, the block comment (/* ... */) is not ended since the single-line comment (// ...) comments out the closing part.
+b.It is a completely valid comment. The // part is ignored by the compiler.
+c.This combination of comments is illegal and the compiler will reject it.
+
+
+
+4.Which of the following do not denote a primitive data value in Java? Select the two correct answers.
+a."t"
+b.'k'
+c.50.5F
+d."hello"
+e.false
+
+
+
+
+5.Which of the following primitive data types are not integer types? Select the three correct answers.
+a.Type boolean
+b.Type byte
+c.Type float
+d.Type short
+e.Type double
+
+
+
+6.Which integral type in Java has the exact range from -2147483648 (-231) to 2147483647 (231-1), inclusive? Select the one correct answer.
+
+a.Type byte
+b.Type short
+c.Type int
+d.Type long
+e.Type char
+
+
+
+ 
+7.Which of the following lines are valid declarations?Select the three correct answers.
+a.char a = '\u0061';
+b.char 'a' = 'a';
+c.char \u0061 = 'a';
+d.ch\u0061r a = 'a';
+e.ch'a'r a = 'a';
+
+
+
+
+8.Given the following code within a method, which statement is true? Select the one correct answer.
+
+int a, b;
+b = 5;
+ 
+a.Local variable a is not declared.
+b.Local variable b is not declared.
+c.Local variable a is declared but not initialized.
+d.Local variable b is declared but not initialized.
+e.Local variable b is initialized but not declared.
+
+
+
+
+9.In which of these variable declarations will the variable remain uninitialized unless explicitly initialized?
+Select the one correct answer.
+
+a.Declaration of an instance variable of type int.
+b.Declaration of a static variable of type float.
+c.Declaration of a local variable of type float.
+d.Declaration of a static variable of type Object.
+e.Declaration of an instance variable of type int[].
+
+
+
+10.What will be the result of attempting to compile this class?
+ 
+import java.util.*;
+package com.acme.toolkit;
+
+public class AClass {
+    public Other anInstance;
+}
+class Other {
+    int value;
+}
+ 
+Select the one correct answer.
+a.The class will fail to compile, since the class Other has not yet been declared when referenced in class AClass.
+b.The class will fail to compile, since import statements must never be at the very top of a file.
+c.The class will fail to compile, since the package declaration can never occur after an import statement.
+d.The class will fail to compile, since the class Other must be defined in a file called Other.java.
+e.The class will fail to compile, since the class Other must be declared public.
+f.The class will compile without errors.
+
+
+
+
+
+11.Is an empty file a valid source file? Answer true or false.
+
+
+
+
+12.The following program has several errors. Modify it so that it will compile and run without errors. 
+ 
+import java.util.*;
+
+package com.acme;
+
+public class Exercise1 {
+    int counter;
+
+    void main(String[] args) {
+        Exercise1 instance = new Exercise1();
+        instance.go();
+    }
+
+    public void go() {
+        int sum;
+        int i = 0;
+        while (i<100) {
+            if (i == 0) sum = 100;
+            sum = sum + i;
+            i++;
+        }
+        System.out.println(sum);
+    }
+}
+
+
+ 
+13.The following program has several errors. Modify it so that it will compile and run without errors.
+
+ // Filename: Temperature.java
+PUBLIC CLASS temperature {
+    PUBLIC void main(string args) {
+        double fahrenheit = 62.5;
+        */ Convert /*
+        double celsius = f2c(fahrenheit);
+        System.out.println(fahrenheit + 'F = ' + celsius + 'C');
+    }
+
+    double f2c(float fahr) {
+        RETURN (fahr - 32) * 5 / 9;
+    }
+}
+
+
+
+
+14.Write sample program for print default primitive data type values?
+
+
+ 
+
+ 
+
+
+ 
+
+
+
+

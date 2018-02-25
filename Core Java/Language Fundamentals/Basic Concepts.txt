@@ -1,0 +1,206 @@
+
+1.Which of the following is not a legal identifier? Select the one correct answer.
+
+a.a2z
+b.ödipus
+c.52pickup
+d._class
+e.ca$h
+f.total#
+
+Answer: c and f
+
+2.Which statement is true? Select the one correct answer.
+
+a.new and delete are keywords in the Java language.
+b.try, catch, and thrown are keywords in the Java language.
+c.static, unsigned, and long are keywords in the Java language.
+d.exit, class, and while are keywords in the Java language.
+e.return, goto, and default are keywords in the Java language.
+f.for, while, and next are keywords in the Java language.
+
+Answer:e
+In Java, the identifiers delete, thrown, exit, unsigned, and next are not keywords. Java has a goto keyword, but it is reserved and not currently used.
+
+
+3.Is this a complete and legal comment? Select the one correct answer.
+ /* // */
+ 
+
+a.No, the block comment (/* ... */) is not ended since the single-line comment (// ...) comments out the closing part.
+b.It is a completely valid comment. The // part is ignored by the compiler.
+c.This combination of comments is illegal and the compiler will reject it.
+
+Answer:b
+It is a completely valid comment. Comments do not nest. Everything from the start marker of a comment block (/*) until the first occurrence of the end marker of the comment block (*/) is ignored by the compiler.
+
+4.Which of the following do not denote a primitive data value in Java? Select the two correct answers.
+a."t"
+b.'k'
+c.50.5F
+d."hello"
+e.false
+
+Answer: a and d
+String is a class, and "hello" and "t" denote String objects. Java only has the following primitive data types: boolean, byte, short, char, int, long, float, and double.
+
+
+5.Which of the following primitive data types are not integer types? Select the three correct answers.
+a.Type boolean
+b.Type byte
+c.Type float
+d.Type short
+e.Type double
+
+Answer: a,c and e
+Type (a) is a boolean data type, while types (c) and (e) are floating-point data types.
+
+
+6.Which integral type in Java has the exact range from -2147483648 (-231) to 2147483647 (231-1), inclusive? Select the one correct answer.
+
+a.Type byte
+b.Type short
+c.Type int
+d.Type long
+e.Type char
+
+Answer:c
+
+The bit representation of int is 32-bits wide and can hold values in the range -231 (-2147483648)	231-1 (+2147483647)
+
+ 
+7.Which of the following lines are valid declarations?Select the three correct answers.
+a.char a = '\u0061';
+b.char 'a' = 'a';
+c.char \u0061 = 'a';
+d.ch\u0061r a = 'a';
+e.ch'a'r a = 'a';
+
+Answer:(a), (c), and (d)
+
+The \uxxxx notation can be used anywhere in the source to represent unicode characters.
+
+
+8.Given the following code within a method, which statement is true? Select the one correct answer.
+
+int a, b;
+b = 5;
+ 
+a.Local variable a is not declared.
+b.Local variable b is not declared.
+c.Local variable a is declared but not initialized.
+d.Local variable b is declared but not initialized.
+e.Local variable b is initialized but not declared.
+
+Answer:(c)
+
+Local variable a is declared but not initialized. The first line of code declares the local variables a and b. The second line of code initializes the local variable b. Local variable a remains uninitialized.
+
+
+9.In which of these variable declarations will the variable remain uninitialized unless explicitly initialized?
+Select the one correct answer.
+
+a.Declaration of an instance variable of type int.
+b.Declaration of a static variable of type float.
+c.Declaration of a local variable of type float.
+d.Declaration of a static variable of type Object.
+e.Declaration of an instance variable of type int[].
+
+Answer:c
+The local variable of type float will remain uninitialized. Fields receive a default value unless explicitly initialized. Local variables remain uninitialized unless explicitly initialized. The type of the variable does not affect whether a variable is initialized or not.
+
+10.What will be the result of attempting to compile this class?
+ 
+import java.util.*;
+package com.acme.toolkit;
+
+public class AClass {
+    public Other anInstance;
+}
+class Other {
+    int value;
+}
+ 
+Select the one correct answer.
+a.The class will fail to compile, since the class Other has not yet been declared when referenced in class AClass.
+b.The class will fail to compile, since import statements must never be at the very top of a file.
+c.The class will fail to compile, since the package declaration can never occur after an import statement.
+d.The class will fail to compile, since the class Other must be defined in a file called Other.java.
+e.The class will fail to compile, since the class Other must be declared public.
+f.The class will compile without errors.
+
+Answer:(c)
+The class will fail to compile since the package declaration can never occur after an import statement. The package and import statements, if present, must always precede any class definitions. If a file contains both import statements and a package statement, then the package statement must occur before the import statements.
+
+
+
+11.Is an empty file a valid source file? Answer true or false.
+
+Answer:true
+Although nonsensical, an empty file is a valid source file. A source file can contain an optional package declaration, any number of import statements, and any number of class and interface definitions.
+
+
+12.The following program has several errors. Modify it so that it will compile and run without errors. 
+ 
+import java.util.*;
+
+package com.acme;
+
+public class Exercise1 {
+    int counter;
+
+    void main(String[] args) {
+        Exercise1 instance = new Exercise1();
+        instance.go();
+    }
+
+    public void go() {
+        int sum;
+        int i = 0;
+        while (i<100) {
+            if (i == 0) sum = 100;
+            sum = sum + i;
+            i++;
+        }
+        System.out.println(sum);
+    }
+}
+(d) and (f)
+
+The main() method must be declared public, static, and void and takes a single array of String objects as argument. The order of the static and public keywords is irrelevant. Also, declaring the method final is irrelevant in this respect.
+
+ 
+13.The following program has several errors. Modify it so that it will compile and run without errors.
+
+ // Filename: Temperature.java
+PUBLIC CLASS temperature {
+    PUBLIC void main(string args) {
+        double fahrenheit = 62.5;
+        */ Convert /*
+        double celsius = f2c(fahrenheit);
+        System.out.println(fahrenheit + 'F = ' + celsius + 'C');
+    }
+
+    double f2c(float fahr) {
+        RETURN (fahr - 32) * 5 / 9;
+    }
+}
+
+(a), (b), and (c)
+
+Neither main, string, nor args are reserved keywords, but they are legal identifiers. In the declaration public static void main(String[] args), the identifier main denotes the method that is the main entry point of a program. In all other contexts, the identifier main has no predefined meaning.
+
+
+14.Write sample program for print default primitive data type values?
+
+
+ 
+
+ 
+
+
+ 
+
+
+
+

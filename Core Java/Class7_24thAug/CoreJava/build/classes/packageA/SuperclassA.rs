@@ -1,0 +1,3 @@
+packageA.SubclassA
+packageA.SuperclassA
+packageA.AnyClassA

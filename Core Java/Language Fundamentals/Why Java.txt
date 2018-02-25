@@ -1,0 +1,12 @@
+﻿Why Is Java so Popular?
+
+Apart from its standard features, Java comes packed with some extremely useful capabilities that distinguish it from the other languages. Java is:
+
+Portable: Code written in Java can be taken from one computer to the other without having to worry about system configuration details.
+Robust: Java supports reliable exception handling that can withstand all the major types of erroneous and exception conditions without breaking the system.
+Secure: Upon compilation, source code written in Java gets compiled into bytecode, which is later interpreted by the Java Virtual Machine. Byte code is resistant to tampering by external agents.
+Platform Independent: Most of the systems have a built-in java runtime environment, the only prerequisite for running an application that has been designed in Java. As a result, no setups or dependencies have to be injected into a system before executing a Java app.
+Self-Memory Managed: The coder does not have to be concerned about the memory logistics, allocation and de-allocation of objects. JVM looks after it.
+High Performance: Both in terms of memory and efficiency, Java has proved itself to be immaculate. Earlier in its history, the bytecode interpretation was considered to be an additional responsibility of the compiler, which demanded intensive processing and memory consumption. But, with the advancement of virtual machines, there is just in time (JIT) compilation, which provides both high speed and high performance.
+Multithreading: Synchronization and multitasking come as a complimentary gift thanks to Java's multithreading features. These are particularly useful in multimedia and other real-time applications.
+Support for Networking: With each release, the community of developers who contribute in Java development come up with highly advanced and sophisticated APIs and libraries, These are available as ready-to-use packages to build reliable and strong network systems

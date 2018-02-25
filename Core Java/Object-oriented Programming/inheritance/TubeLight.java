@@ -1,0 +1,87 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+package inheritance;
+
+class Light {                       // (1)
+    // Instance fields
+              int     noOfWatts;    // wattage
+    private   boolean indicator;    // on or off
+    protected  static String  location;     // placement
+
+    // Static fields
+    private static int counter;     // no. of Light objects created
+
+    // Constructor
+    Light() {
+    	
+    	System.out.println("Light");
+        noOfWatts = 50;
+        indicator = true;
+        location  = "X";
+        counter++;
+    }
+
+    // Instance methods
+    public  void    switchOn()  { indicator = true; }
+    public  void    switchOff() { indicator = false; }
+    public  boolean isOn()      { return indicator; }
+    public   void    printLocation() throws NullPointerException {
+         System.out.println("Location: " + location);
+    }
+
+    // Static methods
+    public  static void writeCount() {
+         System.out.println("Number of lights: super callss " + counter);
+    }
+    //...
+}
+
+class TubeLight extends Light {     // (2) Subclass uses the extends clause.
+    // Instance fields
+    private int tubeLength = 54;
+    private int colorNo    = 10;
+    public  String location ="xyz";
+    
+  
+    public    void   printLocation()  {
+        System.out.println("Location: " + this.location);
+        System.out.println("Location: " + super.location);
+   }
+     
+    public static  void writeCount() {
+        System.out.println("Number of from sub calss " );
+   }
+
+    // Instance methods
+    public int getTubeLength() { return tubeLength; }
+
+    public  void printInfo() {
+        System.out.println("Tube length: "  + getTubeLength());
+        System.out.println("Color number: " + colorNo);
+        System.out.println("Wattage: "      + noOfWatts); // Inherited.
+     // System.out.println("Indicator: "    + indicator); // Not Inherited.
+        System.out.println("Indicator: "    + isOn());    // Inherited.
+        System.out.println("Location: "     + super.location);  // Inherited.
+    //  printLocation();                                  // Not Inherited.
+    //  System.out.println("Counter: "    + counter);     // Not Inherited.
+        writeCount(); 
+        // Inherited.
+        super.writeCount();
+    }
+    // ...
+    
+
+
+              // (3)
+    public static void main(String[] args) {
+        
+       
+       new TubeLight().printInfo();
+       
+       
+    }
+}

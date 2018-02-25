@@ -1,0 +1,454 @@
+
+1 Given char c = 'A'; What is the simplest way to convert the character value in c into an int?
+ 
+Select the one correct answer.
+a.int i = c;
+b.int i = (int) c;
+c.int i = Character.getNumericValue(c);
+
+Answer:a 
+A value of type char can be assigned to a variable of type int. An implicit widening conversion will convert the value to an int.
+
+
+2.What will be the result of attempting to compile and run the following class?
+ public class Assignment {
+    public static void main(String[] args) {
+        int a, b, c;
+        b = 10;
+        a = b = c = 20;
+        System.out.println(a);
+    }
+}
+
+Select the one correct answer.
+a.The code will fail to compile, since the compiler will recognize that the variable c in the assignment statement a = b = c = 20; has not been initialized.
+b.The code will fail to compile because the assignment statement a = b = c = 20; is illegal.
+c.The code will compile correctly and will display 10 when run.
+d.The code will compile correctly and will display 20 when run.
+
+Answer:d
+An assignment statement is an expression statement. The value of the expression statement is the value of the expression on the right hand side. Since the assignment operator is right associative, the statement a = b = c = 20 is evaluated as follows: (a = (b = (c = 20))). This results in the value 20 being assigned to variable c, then the same value being assigned to variable b and finally to variable a. The program will compile correctly and display 20 when run.
+
+
+3.What will be the result of attempting to compile and run the following program?
+ public class MyClass {
+    public static void main(String[] args) {
+        String a, b, c;
+        c = new String("mouse");
+        a = new String("cat");
+        b = a;
+        a = new String("dog");
+        c = b;
+
+        System.out.println(c);
+    }
+}
+ 
+Select the one correct answer.
+a.The program will fail to compile.
+b.The program will print mouse when run.
+c.The program will print cat when run.
+d.The program will print dog when run.
+e.The program will randomly print either cat or dog when run.
+
+Answer:b
+
+Strings are objects. The variables a, b, and c are references that can denote such objects. Assigning to a reference only changes the reference value. It does not create a copy of the source object or change the object denoted by the old reference value in the destination reference. In other words, assignment to references only affects which object the destination reference denotes. The reference value of the "cat" object is first assigned to variable a, then to variable b, and later to variable c. The program prints the string denoted by the variable c, which is "cat".
+
+
+
+4.Which of the following expressions will be evaluated using floating-point arithmetic?
+Select the three correct answers.
+
+a.2.0 * 3.0
+b.2 * 3
+c.2/3 + 5/7
+d.2.4 + 1.6
+e.0x10 * 1L * 300.0
+
+Answer:a,d and e
+A binary expression with any floating-point operand will be evaluated using floating-point arithmetic. Expressions such as 2/3, where both operands are integers, will use integer arithmetic and evaluate to an integer value.
+
+
+5.What is the value of the expression (1 / 2 + 3 / 2 + 0.1)?
+ Select the one correct answer.
+
+a.1
+b.1.1
+c.1.6
+d.2
+e.2.1
+
+Answer:b
+
+The / operator has higher precedence than the + operator. This means that the expression is evaluated as ((1/2) + (3/2) + 0.1). The associativity of the binary operators is from left to right, giving (((1/2) + (3/2)) + 0.1). Integer division results in ((0 + 1) + 0.1) which evaluates to 1.1.
+
+
+6.What will be the result of attempting to compile and run the following program?
+ public class Integers {
+    public static void main(String[] args) {
+        System.out.println(0x10 + 10 + 010);
+    }
+}
+ 
+Select the one correct answer.
+
+a.The program will not compile. The compiler will complain about the expression 0x10 + 10 + 010.
+b.When run, the program will print 28.
+c.When run, the program will print 30.
+d.When run, the program will print 34.
+e.When run, the program will print 36.
+f.When run, the program will print 101010.
+
+Answer:d
+0x10 is a hexadecimal literal equivalent to the decimal value 16. 10 is a decimal literal. 010 is an octal literal equivalent to the decimal value 8. The println() method will print the sum of these values, which is 34, in decimal form.
+
+
+7.Which of the following expressions are valid?Select the three correct answers.
+a.(- 1 -)
+b.(+ + 1)
+c.(+-+-+-1)
+d.(--1)
+e.(1 * * 1)
+f.(- -1)
+
+Answer: (b), (c), and (f)
+
+The unary + and - operators with right-to-left associativity are used in the valid expressions (b), (c), and (f). Expression (a) tries to use a nonexistent unary - operator with left-to-right associativity, expression (d) tries to use a decrement operator (--) on an expression that does not resolve to a variable, and expression (e) tries to use a nonexistent unary * operator.
+
+
+8.What is the value of evaluating the following expression (- -1-3 * 10 / 5-1)?
+Select the one correct answer.
+
+a.-8
+b.-6
+c.7
+d.8
+e.10
+f.None of the above.
+
+Answer:b
+
+The expression evaluates to -6. The whole expression is evaluated as (((-(-1)) - ((3 * 10) / 5)) - 1) according to the precedence and associativity rules.
+
+
+
+9.Which of these assignments are valid?Select the four correct answers.
+
+a.short s = 12;
+b.long l = 012;
+c.int other = (int) true;
+d.float f = -123;
+e.double d = 0x12345678;
+
+Answer:a ,b ,d and e
+
+In (a) the conditions for implicit narrowing conversion are fulfilled: the source is a constant expression of type int, the destination type is of type short, the value of the source (12) is in the range of the destination type. The assignments in (b), (d), and (e) are valid, since the source type is narrower than the target type and an implicit widening conversion will be applied. The expression (c) is not valid. Values of type boolean cannot be converted to other types.
+
+
+10.Which statements are true? Select the three correct answers.
+
+a.The result of the expression (1 + 2 + "3") would be the string "33".
+b.The result of the expression ("1" + 2 + 3) would be the string "15".
+c.The result of the expression (4 + 1.0f) would be the float value 5.0f.
+d.The result of the expression (10/9) would be the int value 1.
+e.The result of the expression ('a' + 1) would be the char value 'b'.
+
+Answer:a ,c and d
+
+The left associativity of the + operator makes the evaluation of (1 + 2 + "3") proceed as follows: (1 + 2) + "3" 3 + "3" "33". Evaluation of the expression ("1" + 2 + 3), however, will proceed as follows: ("1" + 2) + 3 "12" + 3 "123". (4 + 1.0f) evaluates as 4.0f + 1.0f 5.0f and (10/9) performs integer division, resulting in the value 1. The operand 'a' in the expression ('a' + 1) will be promoted to int, and the resulting value will be of type int.
+
+
+11.What happens when you try to compile and run the following program?
+ public class Prog1 {
+    public static void main(String[] args) {
+        int k = 1;
+        int i = ++k + k++ + + k;
+        System.out.println(i);
+    }
+}
+ 
+Select the one correct answer.
+a.The program will not compile. The compiler will complain about the expression ++k + k++ + + k.
+b.The program will compile and will print the value 3 when run.
+c.The program will compile and will print the value 4 when run.
+d.The program will compile and will print the value 7 when run.
+e.The program will compile and will print the value 8 when run.
+
+Answer:d
+The expression ++k + k++ + + k is evaluated as ((++k) + (k++)) + (+k) ((2) + (2) + (3)), resulting in the value 7.
+
+
+12.Which is the first incorrect line that will cause a compile time error in the following program?
+ public class MyClass {
+    public static void main(String[] args) {
+        char c;
+        int i;
+        c = 'a'; // (1)
+        i = c;   // (2)
+        i++;     // (3)
+        c = i;   // (4)
+        c++;     // (5)
+    }
+}
+ 
+Select the one correct answer.
+a.The line labeled (1)
+b.The line labeled (2)
+c.The line labeled (3)
+d.The line labeled (4)
+e.The line labeled (5)
+f.None of the lines are incorrect. The program will compile just fine.
+
+Answer:d
+
+The types char and int are both integral. A char value can be assigned to an int variable since the int type is wider than the char type and an implicit widening conversion will be done. An int type cannot be assigned to a char variable because the char type is narrower than the int type. The compiler will report an error about a possible loss of precision in the line labeled (4).
+
+
+13.What happens when you try to compile and run the following program?
+ public class Cast {
+    public static void main(String[] args) {
+        byte b = 128;
+        int  i = b;
+        System.out.println(i);
+    }
+}
+ 
+Select the one correct answer.
+
+a.The compiler will refuse to compile it, since you cannot assign a byte to an int without a cast.
+b.The program will compile and will print 128 when run.
+c.The compiler will refuse to compile it, since 128 is outside the legal range of values for a byte.
+d.The program will compile, but will throw a ClassCastException when run.
+e.The program will compile and will print 255 when run.
+
+Answer:c
+Variables of type byte can store values in the range ?128 to 127. The expression on the right-hand side of the first assignment is the int literal 128. Had this literal been in the range of the byte type, an implicit narrowing conversion would have to be applied during assignment to convert it to a byte value. Since 128 is outside the valid range of type byte, the compiler will not compile the code.
+
+
+14.What will the following program print when run?
+ public class EvaluationOrder {
+    public static void main(String[] args) {
+        int[] array = { 4, 8, 16 };
+        int i=1;
+        array[++i] = --i;
+        System.out.println(array[0] + array[1] + array[2]);
+    }
+}
+ 
+Select the one correct answer.
+a.13
+b.14
+c.20
+d.21
+e.24
+
+
+Answer:(a)
+
+First, the expression ++i is evaluated, resulting in the value 2, Now the variable i also has the value 2. The target of the assignment is now determined to be the element array[2]. Evaluation of the right-hand expression, --i, results in the value 1. The variable i now has the value 1. The value of the right-hand expression 1 is then assigned to the array element array[2], resulting in the array contents to become {4, 8, 1}. The program sums these values and prints 13.
+
+
+
+15.Which of the following expressions evaluates to true?
+ Select the two correct answers.
+ 
+a.(false | true)
+b.(null != null)
+c.(4 <= 4)
+d.(!true)
+e.(true & false)
+(a) and (c)
+
+Answer:The expression (4 <= 4) is true. The null literal can be compared, so (null != null) yields false.
+
+16.Which statements are true? Select the two correct answers.
+
+a.The remainder operator % can only be used with integral operands.
+b.Identifiers in Java are case insensitive.
+c.The arithmetic operators *, /, and % have the same level of precedence.
+d.A short value ranges from -128 to +127 inclusive.
+e.(+15) is a legal expression.
+
+Answer:(c) and (e)
+
+The remainder operator is not limited to integral values, but can also be applied to floating-point operands. Identifiers in Java are case sensitive. Operators *, /, and % have the same level of precedence. Type short has the range -32768 to +32767 inclusive. (+15) is a legal expression using the unary + operator.
+
+
+ 
+17.Which statements are true about the lines of output printed by the following program?
+ public class BoolOp {
+    static void op(boolean a, boolean b) {
+        boolean c = a != b;
+        boolean d = a ^ b;
+        boolean e = c == d;
+        System.out.println(e);
+    }
+
+    public static void main(String[] args) {
+        op(false, false);
+        op(true, false);
+        op(false, true);
+        op(true, true);
+    }
+}
+ 
+Select the three correct answers.
+a.All lines printed are the same.
+b.At least one line contains false.
+c.At least one line contains true.
+d.The first line contains false.
+e.The last line contains true.
+
+Answer:(a), (c), and (e)
+
+The != and ^ operators, when used on boolean operands, will return true if and only if one operand is true, and false otherwise. This means that d and e in the program will always be assigned the same value, given any combination of truth values in a and b. The program will, therefore, print true four times.
+
+
+18.What happens during execution of the following program?
+ public class OperandOrder {
+    public static void main(String[] args) {
+        int i = 0;
+        int[] a = {3,6};
+        a[i] = i = 9;
+        System.out.println(i + " " + a[0] + " " + a[1]);
+    }
+}
+ 
+Select the one correct answer.
+a.Throws an exception of type ArrayIndexOutOfBoundsException
+b.Prints "9 9 6"
+c.Prints "9 0 6"
+d.Prints "9 3 6"
+e.Prints "9 3 9"
+
+Answer:(b)
+
+The element referenced by a[i] is determined based on the current value of i, which is zero, that is, the element a[0]. The expression i = 9 will evaluate to the value 9, which will be assigned to the variable i. The value 9 is also assigned to the array element a[0]. After the execution of the statement, the variable i will contain the value 9, and the array a will contain the values 9 and 6. The program will print 9 9 6 when run.
+
+
+19.Which statements are true about the output of the following program?
+ public class Logic {
+    public static void main(String[] args) {
+        int i = 0;
+        int j = 0;
+
+        boolean t = true;
+        boolean r;
+
+        r = (t &  0<(i+=1));
+        r = (t && 0<(i+=2));
+        r = (t |  0<(j+=1));
+        r = (t || 0<(j+=2));
+        System.out.println(i + " " + j);
+    }
+}
+ 
+Select the two correct answers.
+
+a.The first digit printed is 1.
+b.The first digit printed is 2.
+c.The first digit printed is 3.
+d.The second digit printed is 1.
+e.The second digit printed is 2.
+f.The second digit printed is 3.
+
+Answer:(c) and (d)
+
+Unlike the & and | operators, the && and || operators short-circuit the evaluation of their operands if the result of the operation can be determined from the value of the first operand. The second operand of the || operator in the program is never evaluated because of short-circuiting. All the operands of the other operators are evaluated. Variable i ends up with a value of 3, which is the first digit printed, and j ends up with a value of 1, which is the second digit printed.
+
+
+20.What would be printed during execution of the following program?
+ public class MyClass {
+    public static void main(String[] args) {
+        test(1<<32, "1<<32");
+        test(1<<31, "1<<31");
+        test(1<<30, "1<<30");
+        test(1,     "1"    );
+        test(0,     "0"    );
+        test(-1,    "-1"   );
+    }
+
+    public static void test(int i, String exp) {
+        if ((i >> 1) != (i >>> 1)) System.out.println(exp);
+    }
+}
+ 
+Select the two correct answers.
+a."1<<32"
+b."1<<31"
+c."1<<30"
+d."1"
+e."0"
+f."-1"
+
+21.Which of the following are not operators in Java? Select the two correct answers.
+
+a.%
+b.<<<
+c.&
+d.%=
+e.>>>
+f.<=
+g.&&=
+
+Answer:b) and (g)
+
+Java has the operators >> and >>> to perform signed and unsigned right shifts. For left shifts there is no difference between shifting signed and unsigned values. Java, therefore, only has one left-shift operator, which is <<. <<< is not an operator in Java. Java has the boolean AND compound assignment operator &=, but &&= is not an operator in Java.
+
+
+
+22.Given a variable x of type int (which may contain a negative value), which are correct ways of doubling the value of x, barring any wrapping of out-of-range intermediate values?
+ 
+Select the four correct answers.
+a.x << 1;
+b.x = x * 2;
+c.x *= 2;
+d.x += x;
+e.x <<= 1;
+
+Answer:(b), (c), (d), and (e)
+
+All the expressions will return the same result. All expressions will accommodate negative values, and x can be any value of type int. However, expression (a) will not assign the result back to the variable x.
+
+
+23.Which of the following operators can be used both as an integer bitwise operator and a boolean logical operator?
+ 
+Select the three correct answers.
+a.^
+b.!
+c.&
+d.|
+e.~
+
+Answer:(a), (c), and (d)
+
+The logical complement operator (!) cannot be used as an integer bitwise operator, and the bitwise complement operator (~) cannot be used as a boolean logical operator.
+
+
+24.Given these declarations, which of the following expressions are valid?
+ byte  b = 1;
+char  c = 1;
+short s = 1;
+int   i = 1;
+ 
+Select the three correct answers.
+a.s = b * 2;
+b.i = b << s;
+c.b <<= s;
+d.c = c + b;
+e.s += i;
+
+Answer:(b), (c), and (e)
+
+All the values of the expressions on the right-hand side of the assignments are implicitly promoted to type int. For expression (b) this works, since the target type is also int. The compound assignment operators in expressions (c) and (e) ensure that an implicit narrowing conversion makes the result fit back in the target variable. Expressions (a) and (d) are simply invalid, since the type of expression on the right-hand side of the assignment operator is not compatible with the type of the target variable on the left-hand side
+
+ 
+
+ 
+
+
+ 
+
+
+ 

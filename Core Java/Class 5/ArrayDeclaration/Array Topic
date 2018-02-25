@@ -1,0 +1,102 @@
+Array Declaration
+
+1.Indexed  collection of fixed number of homogeneous/same data elements(Primate Data type & Reference types).
+2.Arrays are fixed size. (Final variable Length).
+3.If array size n,the first element start with "0" and Last element n-1
+4.Array Syntax as follows
+   <element type>[] <array name> 
+      OR
+   <element type> <array name>[][][]
+5.Example "ArrayDeclaration.java"
+
+Constructing an Array
+
+1. An array can be constructed for a specific number of elements of element type, using new operator.
+
+  <array name>=new <element type>[<array size>];
+2. Minimum value of <array size> is "0".
+3. If Array size is negative, it thrown NagativeArraySizeException.
+4. The array can be declaration and construction can be combined
+    <element type>[] <array name>=new <element type>[<array size];
+
+Initializing an Array
+
+1. Declaration + Constructing + initializing can be one declaration statement.
+    <element type>[] <array name>={<array initialize list>}
+2. Comma separated list and terminated with "," also legal.
+int[] a;
+  a={1,2,3} // not ok
+
+Anonymous Array
+1. Nameless array of specific type
+   new <element type>[]{<array initialize list>} Example new int[]{1,2,3}
+
+Multidimensional Arrays.
+Array element can be store ref object. So it support array of arrays.
+<element type>[][][]......<array name> or <element type> <array name>[][][]
+[] indicate the number of dimensions
+
+Example :
+int[][] i; 2-dimensional
+int[] j[];
+
+int[][] j=new int[4][5]    4 rows and 5 columns
+
+double[][] k={
+               {1.0,0.0,2.0,3.0},
+               {1.0,0.0,2.0,3.0},
+               {1.0,0.0,2.0,3.0},
+                {1.0,0.0,2.0,3.0},
+               } 4 rows 4 columns
+Array will  allocate from left to right
+Array length can't be same.
+
+Statement
+1. Declaration Statement:Variable declarations with Explicit initialization of the variables. int i=10;
+2.Control flow for,while,if,switch
+3.Expression Example i++;
+4.Compound Statement {}
+5.Empty Statement ";"
+
+
+Instance Methods and Object Reference this
+1.this keyword used for currentt obj
+2.Instance methods can access static and non static members.
+3.this keyword can't access static members.
+4. To Hide/Shadow local members.
+
+Method overloading
+Same method and different parameter list called method overloading.
+int methodA()
+void methodA(int i)
+int methodA(int k,double j)
+Double methodA(int k,double j);
+
+Constructors
+
+<access modifier> <class name>(<formal parameter list>) <throws clause>
+{
+   <local var>
+   <nested local class>
+   <statements>
+}
+Default Constructor
+
+Overloaded Constructors
+
+Access modifiers{public,protected,private,default}
+Class default and public for class
+abstract and final
+
+static,final,abstract,synchronized,native,transient and volatile
+
+  
+
+ 
+
+
+
+
+
+ 
+

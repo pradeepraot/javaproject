@@ -1,0 +1,246 @@
+
+1.Given the following declaration, which expression returns the size of the array, assuming the array has been initialized?
+ int[] array;
+ 
+Select the one correct answer.
+ 
+a.array[].length()
+b.array.length()
+c.array[].length
+d.array.length
+e.array[].size()
+f.array.size()
+
+
+2 Is it possible to create arrays of length zero?
+ 
+Select the one correct answer.
+ 
+a.Yes, you can create arrays of any type with length zero.
+b.Yes, but only for primitive data types.
+c.Yes, but only for arrays of object references.
+d.No, you cannot create zero-length arrays, but the main() method may be passed a zero-length array of String references when no program arguments are specified.
+e.No, it is not possible to create arrays of length zero in Java.
+
+3.Which one of the following array declaration statements is not legal?
+Select the one correct answer.
+
+a.int []a[] = new int [4][4];
+b.int a[][] = new int [4][4];
+c.int a[][] = new int [][4];
+d.int []a[] = new int [4][];
+e.int [][]a = new int [4][4];
+
+4.Which of these array declaration statements are not legal?
+Select the two correct answers.
+
+a.int[] i[] = { { 1, 2 }, { 1 }, {}, { 1, 2, 3 } };
+b.int i[] = new int[2] {1, 2};
+c.int i[][] = new int[][] { {1, 2, 3}, {4, 5, 6} };
+d.int i[][] = { { 1, 2 }, new int[ 2 ] };
+e.int i[4] = { 1, 2, 3, 4 };
+
+5.What would be the result of attempting to compile and run the following program?
+ // Filename: MyClass.java
+class MyClass {
+    public static void main(String[] args) {
+        int size = 20;
+        int[] arr = new int[ size ];
+
+        for (int i = 0; i < size; ++i) {
+                System.out.println(arr[i]);
+        }
+    }
+}
+ 
+Select the one correct answer.
+a.The code will fail to compile because the array type int[] is incorrect.
+b.The program will compile, but will throw an ArrayIndexOutOfBoundsException when run.
+c.The program will compile and run without error, but will produce no output.
+d.The program will compile and run without error and will print the numbers 0 through 19.
+e.The program will compile and run without error and will print 0 twenty times.
+f.The program will compile and run without error and will print null twenty times.
+
+6. Given the following program, which statement is true?
+ class MyClass {
+    public static void main(String[] args) {
+        String[] numbers = { "one", "two", "three", "four" };
+
+        if (args.length == 0) {
+            System.out.println("no arguments");
+        } else {
+            System.out.println(numbers[ args.length ] + " arguments");
+        }
+    }
+}
+ 
+Select the one correct answer.
+a.The program will fail to compile.
+b.The program will throw a NullPointerException when run with zero program arguments.
+c.The program will print "no arguments" and "two arguments" when called with zero and three program arguments, respectively.
+d.The program will print "no arguments" and "three arguments" when called with zero and three program arguments, respectively.
+e.The program will print "no arguments" and "four arguments" when called with zero and three program arguments, respectively.
+f.The program will print "one arguments" and "four arguments" when called with zero and three program arguments, respectively.
+
+ 
+7.What would be the result of trying to compile and run the following program?
+ public class DefaultValuesTest {
+    int[] ia = new int[1];
+    boolean b;
+    int i;
+    Object o;
+
+    public static void main(String[] args) {
+        DefaultValuesTest instance = new DefaultValuesTest();
+        instance.print();
+    }
+
+    public void print() {
+        System.out.println(ia[0] + " " + b + " " + i + " " + o);
+    }
+}
+ 
+Select the one correct answer.
+a.The program will fail to compile because of uninitialized variables.
+b.The program will throw a java.lang.NullPointerException when run.
+c.The program will print "0 false NaN null".
+d.The program will print "0 false 0 null".
+e.The program will print "null 0 0 null".
+f.The program will print "null false 0 null".
+
+
+8.Which one of these is a valid method declaration?
+ 
+Select the one correct answer.
+a.void method1 { /* ... */ }
+b.void method2() { /* ... */ }
+c.void method3(void) { /* ... */ }
+d.method4() { /* ... */ }
+e.method5(void) { /* ... */ }
+
+
+9.Given the following code, which statements can be placed at the indicated position without causing compilation errors?
+ public class ThisUsage {
+    int planets;
+    static int suns;
+    public void gaze() {
+        int i;
+        // ... insert statements here ...
+    }
+}
+ 
+Select the three correct answers.
+a.i = this.planets;
+b.i = this.suns;
+c.this = new ThisUsage();
+d.this.i = 4;
+e.this.suns = planets;
+
+10.Given the following pairs of method declarations, which statements are true?
+ void fly(int distance) {}
+int  fly(int time, int speed) { return time*speed; }
+void fall(int time) {}
+int  fall(int distance) { return distance; }
+void glide(int time) {}
+void Glide(int time) {}
+ 
+Select the two correct answers.
+
+a.The first pair of methods will compile correctly and overload the method name fly.
+b.The second pair of methods will compile correctly and overload the method name fall.
+c.The third pair of methods will compile correctly and overload the method name glide.
+d.The second pair of methods will not compile correctly.
+e.The third pair of methods will not compile correctly.
+
+11.Given a class named Book, which one of these is a valid constructor declaration for the class?
+Select the one correct answer.
+
+a.Book(Book b) {}
+b.Book Book() {}
+c.private final Book() {}
+d.void Book() {}
+e.public static void Book(String[] args) {}
+f.abstract Book() {}
+
+12.Which statements are true?
+ 
+Select the two correct answers.
+
+a.All classes must define a constructor.
+b.A constructor can be declared private.
+c.A constructor can return a value.
+d.A constructor must initialize all the fields of a class.
+e.A constructor can access the non-static members of a class.
+
+13.What will be the result of attempting to compile the following program?
+ public class MyClass {
+    long var;
+    public void MyClass(long param) { var = param; }  // (1)
+    public static void main(String[] args) {
+        MyClass a, b;
+        a = new MyClass();                            // (2)
+        b = new MyClass(5);                           // (3)
+    }
+}
+ 
+Select the one correct answer.
+a.A compilation error will occur at (1), since constructors cannot specify a return value.
+b.A compilation error will occur at (2), since the class does not have a default constructor.
+c.A compilation error will occur at (3), since the class does not have a constructor which takes one argument of type int.
+d.The program will compile correctly.
+
+ 
+
+14.Given the following class, which of these are valid ways of referring to the class from outside of the package net.basemaster?
+ package net.basemaster;
+
+public class Base {
+    // ...
+}
+ 
+Select the two correct answers.
+a.By simply referring to the class as Base.
+b.By simply referring to the class as basemaster.Base.
+c.By simply referring to the class as net.basemaster.Base.
+d.By importing with net.basemaster.* and referring to the class as Base.
+e.By importing with net.* and referring to the class as basemaster.Base.
+
+15.Which one of the following class definitions is a valid definition of a class that cannot be instantiated?
+Select the one correct answer.
+
+a.class Ghost {
+       abstract void haunt();
+   }
+
+b.abstract class Ghost {
+       void haunt();
+  }
+
+c.
+abstract class Ghost {
+       void haunt() {};
+   }
+
+d.abstract Ghost {
+    abstract void haunt();
+   }
+
+e.static class Ghost {
+       abstract haunt();
+   }
+
+16.Which one of the following class definitions is a valid definition of a class that cannot be extended?
+ 
+Select the one correct answer.
+a.class Link { }
+b.abstract class Link { }
+c.native class Link { }
+d.static class Link { }
+e.final class Link { }
+f.private class Link { }
+g.abstract final class Link { }
+
+ 
+
+
+ 
