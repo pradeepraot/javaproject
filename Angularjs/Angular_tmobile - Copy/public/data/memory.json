@@ -1,0 +1,10 @@
+﻿{
+    "Memories": {
+        "MyMemory": [
+            { "id": 1, "MemoryValue": "16", "MemoryName": "16 GB" },
+            { "id": 2, "MemoryValue": "32", "MemoryName": "32 GB" },
+			{ "id": 3, "MemoryValue": "64", "MemoryName": "64 GB" },
+			{ "id": 4, "MemoryValue": "128", "MemoryName": "128 GB" }			
+        ]
+    }
+}

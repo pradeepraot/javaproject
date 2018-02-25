@@ -1,0 +1,608 @@
+<div class="row header zero_margin">
+    <div class=" col-lg-6 col-md-6 col-sm-6 " style="float:left; padding-left:70px;  height:;">
+        <h3> LETS TALK CREDIT </h3>
+        <p> Give us your credit range for rough estimate of your up-front costs</p>
+    </div>
+    <div class=" col-lg-6 col-md-6 col-sm-6" style=" padding-left:0px; height:50px;">
+        <div class=" col-lg-4 col-md-2 col-sm-2  text-center">
+            <p class="circle " style="text-align:center;font-size:10px;padding-top:20px;">AWESOME CREDIT </p>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4  ">
+            <p class="circle1" style="text-align:center;font-size:10px;padding-top:20px;">SO SO CREDIT</p>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4  ">
+            <p class="circle1" style="text-align:center;font-size:10px;padding-top:20px;">FORGET CREDIT CHECK</p>
+        </div>
+    </div>
+</div>
+<div class="greyRow col-lg-12 col-md-12 col-sm-12 hidden-xs padding_zero">
+    <p4 style="text-align:center"> Order with JUMP! On demand! So upfront + $5/mo x 18 mos. with eligible trade-in O.A.C Call 1-877-413-5903</p4>
+</div>
+<div class="container">
+    <div class="row1 product zero_margin" style="height:420px;">
+
+        <div class=" col-lg-6 col-md-6 col-sm-6 carousel slide " class="myCarousel">
+
+            <!-- slider -->
+            <div class="carousel-inner">
+                <div class="active item">
+                    <!-- item 1 -->
+                    <img alt="Apple iPhone 6s" title="Apple iPhone 6s" class="product-image-intro" src="images/carousel-apple-iphone-6s-rose-gold-380x380-1.jpg" style="margin-top:50px;margin-bottom:30px;" height="380" width="380" itemprop="image">
+                </div> <!-- end item -->
+                <div class="item">
+                    <!-- item 2 -->
+                    <img alt="Apple iPhone 7s" title="Apple iPhone 6s" class="product-image-intro" src="images/carousel-apple-iphone-6s-rose-gold-380x380-2.jpg" style="margin-top:30px;margin-bottom:30px;" height="380" width="380" itemprop="image">
+                </div> <!-- end item -->
+                <div class="item">
+                    <!-- item 3 -->
+                    <img alt="Apple iPhone 8s" title="Apple iPhone 6s" class="product-image-intro" src="images/carousel-apple-iphone-6s-rose-gold-380x380-3.jpg" style="margin-top:30px;margin-bottom:30px;" height="380" width="380" itemprop="image">
+                </div> <!-- end item -->
+            </div> <!-- end carousel inner -->
+
+            <a class="carousel-control left" href=".myCarousel" data-slide="prev">&lsaquo;</a>
+            <a class="carousel-control right" href=".myCarousel" data-slide="next">&rsaquo;</a>
+            <!-- end slider -->
+        </div>
+
+        <div class=" col-lg-6 col-md-6 col-sm-6">
+
+            <h3>{{productData[0].Family}}</h3>
+            <p> <span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star-empty"></span> (54 Reviews)</p>
+            <p class="Content-text linebottom">
+                {{productData[0].Description}}...
+                <a href="">See more</a>
+            </p><br>
+
+            <span>Memory:{{productData[0].Memory}}</span>           <span style="padding-left:50px">Color :{{productData[0].Color}}</span><br><br>
+            <div class="btn-group">
+                <button type="button" class="btn btn-primary">16GB</button>
+                <button type="button" data-toggle="dropdown" class="btn btn-primary dropdown-toggle"><span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                    <li><a href="#">16GB</a></li>
+                    <li><a href="#">32GB</a></li>
+                    <li><a href="#">128GB</a></li>
+                </ul>
+                <select ng-model="selectedMemory" 
+                        ng-options="memory as memory.Memory for memory in productData">
+                    <option value=""></option>
+                </select>
+            </div>
+
+
+            <span style="padding-left:60px"><img class="image-box-color" src="images/Apple-iPhone-6s-Plus-Rose-Gold.gif" height="24" width="24" alt="Space Gray"></span>
+            <span style="padding-left:25px"><img class="image-box-color" src="images/Apple-iPhone-6s-Plus-Gold.gif" height="24" width="24" alt="Space Gray"></span>
+            <span style="padding-left:25px"><img class="image-box-color" src="images/Apple-iPhone-6s-Space-Gray.gif" height="24" width="24" alt="Space Gray"></span>
+            <span style="padding-left:25px"><img class="image-box-color" src="images/Apple-iPhone-6s-Silver.gif" height="24" width="24" alt="Space Gray"></span>
+            <a href="">See more</a>
+
+            <div class="linebottom"></div><br>
+
+            <div>
+                <label class="radio-inline">
+                    <input name="radioGroup" id="radio1" value="option1" checked="" type="radio"> Monthtly Payment
+                </label> <span style="padding-left:5px" class="glyphicon glyphicon-question-sign"></span>
+                <label class="radio-inline" style="padding-left:150px">
+                    <input name="radioGroup" id="radio2" value="option2" type="radio"> Retall Price
+                </label>
+            </div>
+            <!--<input id="input-21a" value="0" type="number" class="rating" data-symbol="*" min=0 max=5 step=0.5 data-size="xl" >-->
+            <div>
+                <p style=" font-size:40px;"> <span style="color:#ec008c;">$0 </span><span style="padding-top:10px;z-index:10px; color:#ec008c; font-size:10px">Today</span><span style="padding-left:10px; color:#ec008c; font-size:50px">/ </span><span style="padding-left:0px; font-size:40px">$5 </span><span style="margin-top:20px;z-index:10px;; color:#ec008c; font-size:10px">Monthtly</span><span style="padding-top:10px;z-index:10px;; color:#ec008c; font-size:10px">(x 18 Months with eligible trade-in)</span> <span style="padding-left:30px" class="full-retail-price header5a" cursign="$">$649<sup class="super-decimal-price">99</sup></span></p>
+                <p style=" font-size:40px;">  </p>
+            </div>
+            <div class="linebottom"></div><br>
+            <div class="tile">
+                <p>Order with JUMP!On Demand $0 upfront + $5/mo x 18 mos with eligible trade in-Total Price $649.99.If you cancel wireless service,remaining balance on phone becomes due.For well qualified customer.0% APR.O.A.C Qual'g service req'd.</p>
+                <p><button type="button" class="btn btn-primary btn-lg round">Add to Bag</button><span style="padding-left:80px;"> Need Help ?</span></p>
+                <div class="price">
+                    <p>$15.00 SIM Starter Kit <span class="glyphicon glyphicon-info-sign"></span><br>
+                
+                <span style=" font-size:15px;">New device with iPhone 6s - the only thing that’s changed is everything </span></p>
+                </div>
+                <p style="margin-top:20px;margin-bottom:10px;"><span style="font-size:15px;">Already a Customer?</span><span style="color:#ec008c;font-size:10px;"><a href="">Login to My T-Mobile</a></span></p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- start -->
+    <div class=" col-lg-12 col-md-12 col-sm-12">
+        <section class="features-nav features-nav-size-3">
+            <nav class="sections-nav">
+                <ul id="anchorTabNav" class="nav nav-pills">
+                    <li>
+
+                        <a href="#features" title="FEATURES">
+                            <div class="iconssprite"><span class="features-tab-icon"></span></div>
+                            
+                            <!--<img src="/content/dam/tmo-wem/global-assets/product/expanded-nav/features-cta.png" alt="FEATURES"/>-->
+                            FEATURES               
+                        </a>
+                        <div class="shadow-caret"><i class="down-caret"></i></div>
+                    </li>
+
+
+                    <li class="product-review-ratings">
+
+                        <a href="#reviews" title="REVIEWS">
+                            <div class="iconssprite"><span class="reviews-tab-icon"></span></div>
+                            <!--<img src="/content/dam/tmo-wem/global-assets/product/expanded-nav/reviews-cta.png" alt="REVIEWS"/>-->
+                            REVIEWS
+                        </a>
+                        <div class="shadow-caret"><i class="down-caret"></i></div>
+                    </li>
+
+                    <li>
+
+                        <a href="#accessories" title="ACCESSORIES">
+                            <div class="iconssprite"><span class="accessories-tab-icon"></span></div>
+                            <!--<img src="/content/dam/tmo-wem/global-assets/product/expanded-nav/accessories-cta.png" alt="ACCESSORIES"/>-->
+                            ACCESSORIES
+                        </a>
+                        <div class="shadow-caret"><i class="down-caret"></i></div>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+    </div>
+    <!-- end -->
+    <div id="features" class="box2 padding_zero" style="width: 100%; margin-left: 0px; margin-right: 0%;">
+        <div class="col-lg-12 col-md-12 col-sm-12 box" style="margin-top: 2%; margin-left: 6%">
+
+            <img src="images/features.jpg" class="img-responsive">
+        </div>
+    </div>
+    <div id="Specifications" class="row box3" style="width: 100%; margin-left: 0%; margin-right: 0%;padding-left:120px;padding-right:50px">
+        <h3 class="heading" style="font-family:TeleGrostek-Nor;font-size:35px;">Specifications</h3>
+        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><hr></div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 text_bold">
+                Display
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                <ul>
+                    <li>4.7"</li>
+                    <li>1334 x 750 pixels</li>
+                </ul>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><hr></div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 text_bold">
+                Size and Weight
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                <ul>
+                    <li>5.4 x 2.64 x 0.28 inches</li>
+                    <li>5.04 ounces</li>
+                </ul>
+            </div>
+            <div class="hidden-lg hidden-md hidden-sm col-xs-12">
+                <img src="images/Apple-iPhone-6s-Specifications.JPG" class="img-responsive">
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><hr></div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 text_bold">
+                Operating System and Processor
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                <ul>
+                    <li>iOS 9</li>
+                    <li>A9 Chip</li>
+                </ul>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><hr></div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 text_bold">
+                Battery Life
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                <ul>
+                    <li>Upto 14 hours talk time</li>
+                    <li>Upto 10 days standup time</li>
+                </ul>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><hr></div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 text_bold">
+                Camera, Photos and Video
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                <ul>
+                    <li>12-megapixel iSight Camera</li>
+                    <li>FaceTime HD Camera</li>
+                    <li>4K video Recording</li>
+                </ul>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><hr></div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 text_bold">
+                Memory
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                <ul>
+                    <li>16GB</li>
+                </ul>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><hr></div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 text_bold">
+                Connectivity
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                <ul>
+                    <li>Sync methods: Wi-Fi 802.11a/b/g/n/ac, Bluetooth 4.2, NFC</li>
+                    <li>4G Capable</li>
+                    <li>4G LTE Capable</li>
+                    <li>Wi-Fi Calling</li>
+                </ul>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><hr></div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 text_bold">
+                GPS and Apps
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                <ul>
+                    <li>GPS enabled</li>
+                </ul>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><hr></div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 text_bold">
+                International
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                <ul>
+                    <li>Quad Band GSM; LTE: 1, 2, 3, 4, 5, 6, 7, 8, 12, 13, 17, 18, 19, 20, 25, 26, 41; UMTS: Band I (2100), Band II (1900), Band IV (1700/2100), Band V (850), Band VIII (900)</li>
+                </ul>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><hr></div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 text_bold">
+                Hearing Aid Compatibility
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                <ul>
+                    <li>M3, T4</li>
+                </ul>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><hr></div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 text_bold">
+                WEA Capable? 
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                <ul>
+                    <li>Yes</li>
+                </ul>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><hr></div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 text_bold">
+                Mobile Pay 
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                <ul>
+                    <li>Compatible with Apple Pay</li>
+                </ul>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><hr></div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+            <div class="col-lg-12 col-md-12 col-sm-12 hidden-xs">
+                <img src="images/Apple-iPhone-6s-Specifications.JPG" class="img-responsive">
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <h4 class="text_bold">In The Box</h4>
+                <ul class="text_bold">
+                    <li>iPhone 6s</li>
+                    <li>Apple EarPods with Remote and Mic</li>
+                    <li>Lightning to USB cable</li>
+                    <li>USB power adapter</li>
+                    <li>Documentation</li>
+                </ul>
+                <div class="TMobile_Rounded_button_container">
+                    <button class="btn btn-lg TMobile_Rounded_button">Download user manual</button>
+                </div>
+            </div>
+        </div>
+   </div>
+
+   <div id="reviews" class="row box4" style="width: 100%; margin-left: 0%; margin-right: 0%;">
+        <div class="col-lg-12 col-md-12 col-sm-12 box" style="margin-top: 0%; margin-left: 6%">
+            <h3 style="padding-left: 10%; font-size:35px; font-family:TeleGrostek-Nor;">Reviews</h3>
+            <img src="images/reviews.jpg" class="img-responsive">
+        </div>
+    </div>
+
+    <div id="accessories" class="row box3" style="width: 100%; margin-left: 0%; margin-right: 0%;">
+        <div class="col-lg-12 col-md-12 col-sm-12 box" style="margin-top: 2%; margin-left: 6%">
+
+            <img src="images/accessories.jpg" class="img-responsive">
+        </div>
+    </div>
+
+    <div class="row box5 col-lg-12 col-md-12 col-sm-12" style="width: 100%; margin-left: 0%; margin-right: 0%; padding-left:50px;">
+        <div class="questions col-lg-12 col-md-12 col-sm-12" style="margin-top: 2%" >
+            <div>
+                <h1><b>Questions on Shopping?</b></h1>
+            </div>
+            
+             
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="panel-group" id="accordion">
+                    <div class="panel panel-default" style="margin-top: 0px;">
+                        <div class="panel-heading title">
+                            <h4 class="panel-title" style="font-weight: bold;">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse1" class="">If I switch, will T-Mobile pay my Early Termination Fees?
+                            <span class="pull-right clickable">
+                                <i id="form_collapse1" class="glyphicon glyphicon-chevron-down formcollapse"></i>
+                            </span>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapse1" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                Individuals and families (up to 10 lines) who are currently under a postpaid contract at carriers including AT&T, Sprint, or Verizon and want to switch to T-Mobile can take advantage of the Early Termination Fee (ETF) reimbursement offer. Follow the steps below:
+
+                            Transfer your number(s), trade in your phone(s) and tablet(s) and receive a bill credit based on the market value for your eligible device.Then, when you get your final bill listing your carrier’s Early Termination Fee (ETF) amounts, you simply send it to T-Mobile or submit it online at switch2tmobile.com, and if you qualify, within 8 weeks you will receive a Visa® Prepaid card covering your ETF amount up to $350 per line. The card is not redeemable for cash and expires in 12 months unless extended by Issuer.
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="panel panel-default" style="margin-top: 0px;">
+                        <div class="panel-heading title">
+                            <h4 class="panel-title" style="font-weight: bold;">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">What do I do if my phone is lost or stolen?
+                            <span class="pull-right clickable">
+                                <i id="form_collapse2" class="glyphicon glyphicon-chevron-down formcollapse"></i>
+                            </span>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapse2" class="panel-collapse collapse">
+                            <div class="panel-body">You can report your phone lost or stolen using the help in this document.</div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default" style="margin-top: 0px;">
+                        <div class="panel-heading title">
+                            <h4 class="panel-title" style="font-weight: bold;">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse3" class="">How do I upgrade my phone?
+                            <span class="pull-right clickable">
+                                <i id="form_collapse3" class="glyphicon glyphicon-chevron-down formcollapse"></i>
+                            </span>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapse3" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                You can upgrade your phone easily on My T-Mobile. Simply open manage.my.t-mobile.com, log in, and follow the steps.
+                        Learn more
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default" style="margin-top: 0px;">
+                        <div class="panel-heading title">
+                            <h4 class="panel-title" style="font-weight: bold;">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">I just got a new device, how can I set it up?
+                            <span class="pull-right clickable">
+                                <i id="form_collapse4" class="glyphicon glyphicon-chevron-down formcollapse"></i>
+                            </span>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapse4" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                Getting your new device set up is easy. Just follow our guides to be up and running fast!
+                            View guide
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default" style="margin-top: 0px;">
+                        <div class="panel-heading title">
+                            <h4 class="panel-title" style="font-weight: bold;">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">Why should I restart my device regularly?
+                            <span class="pull-right clickable">
+                                <i id="form_collapse5" class="glyphicon glyphicon-chevron-down formcollapse"></i>
+                            </span>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapse5" class="panel-collapse collapse">
+                            <div class="panel-body">Just like with a computer, restarting your device can help keep it running smoothly.</div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default" style="margin-top: 0px;">
+                        <div class="panel-heading title">
+                            <h4 class="panel-title" style="font-weight: bold;">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse6">How do I make the battery last longer on my Android device?
+                            <span class="pull-right clickable">
+                                <i id="form_collapse6" class="glyphicon glyphicon-chevron-down formcollapse"></i>
+                            </span>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapse6" class="panel-collapse collapse">
+                            <div class="panel-body">No one likes to be tethered to their charger. Check out some of our suggestions for making your battery last all day!</div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default" style="margin-top: 0px;">
+                        <div class="panel-heading title">
+                            <h4 class="panel-title" style="font-weight: bold;">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse7">My Android device is out of storage space, what can I do?
+                            <span class="pull-right clickable">
+                                <i id="form_collapse7" class="glyphicon glyphicon-chevron-down formcollapse"></i>
+                            </span>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapse7" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                It's time to do some spring cleaning! There are many ways to free up some space.
+                                Learn more
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default" style="margin-top: 0px;">
+                        <div class="panel-heading title">
+                            <h4 class="panel-title" style="font-weight: bold;">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse8">My Android device is freezing or not responding, what should I do?
+                            <span class="pull-right clickable">
+                                <i id="form_collapse8" class="glyphicon glyphicon-chevron-down formcollapse"></i>
+                            </span>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapse8" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                Your Android device is like a computer and sometimes it can freeze. We've got you covered though.
+                                Learn more
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default" style="margin-top: 0px;">
+                        <div class="panel-heading title">
+                            <h4 class="panel-title" style="font-weight: bold;">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse9">What is T-Mobile's return policy?
+                            <span class="pull-right clickable">
+                                <i id="form_collapse9" class="glyphicon glyphicon-chevron-down formcollapse"></i>
+                            </span>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapse9" class="panel-collapse collapse">
+                            <div class="panel-body">Our return policies are based on where you bought your phone or device. If you bought it in a T‐Mobile store then you have 14 days to return it to that store. If it was purchased from an authorized dealer it needs to be returned to them. For online or over-the-phone sales you should call us at 1‐800‐866‐2453 and we’ll help you take care of it.</div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default" style="margin-top: 0px;">
+                        <div class="panel-heading title">
+                            <h4 class="panel-title" style="font-weight: bold;">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse10">Is 4G LTE available yet?
+                            <span class="pull-right clickable">
+                                <i id="form_collapse10" class="glyphicon glyphicon-chevron-down formcollapse"></i>
+                            </span>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapse10" class="panel-collapse collapse">
+                            <div class="panel-body">Our state-of-the-art 4G LTE network will reach 100 million Americans by mid-year and 200 million by the end of 2013. Not sure if it is available in your area yet, check out our latest list to check!</div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default" style="margin-top: 0px;">
+                        <div class="panel-heading title">
+                            <h4 class="panel-title" style="font-weight: bold;">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse11">How do I SIM unlock my phone to travel internationally?
+                            <span class="pull-right clickable">
+                                <i id="form_collapse11" class="glyphicon glyphicon-chevron-down formcollapse"></i>
+                            </span>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapse11" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                First, review the eligibility requirements to SIM unlock your phone. When you are ready and meet the requirements, you can contact us.
+
+                        Learn more
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default" style="margin-top: 0px;">
+                        <div class="panel-heading title">
+                            <h4 class="panel-title" style="font-weight: bold;">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse12">Can I bring my own phone?
+                                <span class="pull-right clickable">
+                                    <i id="form_collapse12" class="glyphicon glyphicon-chevron-down formcollapse"></i>
+                                </span>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapse12" class="panel-collapse collapse">
+                            <div class="panel-body">In most cases, the answer is yes. The first step is to check your phone to see if it’s compatible, and to find out what SIM card it uses. Then, you’ll simply select that SIM card and a plan. Once you receive your new SIM card in the mail, you’ll be ready to go.</div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default" style="margin-top: 0px;">
+                        <div class="panel-heading title">
+                            <h4 class="panel-title" style="font-weight: bold;">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse13">Can I pay off my phone early?
+                            <span class="pull-right clickable">
+                                <i id="form_collapse12" class="glyphicon glyphicon-chevron-down formcollapse"></i>
+                            </span>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapse13" class="panel-collapse collapse">
+                            <div class="panel-body">You may pay off the full cost of your phone (and any other devices included in your Equipment Installment Plan) early. If you do, you’ll enjoy monthly savings even sooner. To pay off your phone, you will need to call Customer Care or visit a T-Mobile retail store.</div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default" style="margin-top: 0px;">
+                        <div class="panel-heading title">
+                            <h4 class="panel-title" style="font-weight: bold;">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse14">Can I trade in my old phone?</a>
+                            </h4>
+                        </div>
+                        <div id="collapse14" class="panel-collapse collapse">
+                            <div class="panel-body">Yes! When you purchase any of our new phones we’ll give you a great price for your old one. Just tell us the make, model and condition of your old phone and we’ll give you a quote for your trade-in value. If you like the offer we’ll send you a prepaid shipping label and you can send us your old phone along with the receipt from your new one. Within 3 billing cycles, you’ll receive a credit to your account for the amount of the trade‐in value.</div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default" style="margin-top: 0px;">
+                        <div class="panel-heading title">
+                            <h4 class="panel-title" style="font-weight: bold;">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse15">Can I transfer my mobile phone number to T-Mobile?
+                            <span class="pull-right clickable">
+                                <i id="form_collapse15" class="glyphicon glyphicon-chevron-down formcollapse"></i>
+                            </span>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapse15" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                In most cases, yes. Transferring your number to T-Mobile is easy—it usually takes 24 hours or less. Simply check if your number is eligible to be transferred, and we’ll take care of the rest!
+
+                        Check online
+
+                        If your number can be transferred, then we’ll contact your previous phone company to complete the transfer with your authorization
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default" style="margin-top: 0px;">
+                        <div class="panel-heading title">
+                            <h4 class="panel-title" style="font-weight: bold;">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse16">Can I upgrade my phone to a newer phone before the EIP has been paid off?
+                          <span class="pull-right clickable">
+                              <i id="form_collapse16" class="glyphicon glyphicon-chevron-down formcollapse"></i>
+                          </span>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapse16" class="panel-collapse collapse">
+                            <div class="panel-body">To upgrade early, you’ll need to pay off your entire Equipment Installment Plan. You can do this by calling Customer Care or visiting a T-Mobile retail store.</div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default" style="margin-top: 0px;">
+                        <div class="panel-heading title">
+                            <h4 class="panel-title" style="font-weight: bold;">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse17">Does my monthly cost go down after my phone is fully paid for?
+                          <span class="pull-right clickable">
+                              <i id="form_collapse17" class="glyphicon glyphicon-chevron-down formcollapse"></i>
+                          </span>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapse17" class="panel-collapse collapse">
+                            <div class="panel-body">Yes. You once your phone is paid off, it’s paid off. From that point on you will only pay be billed for the T-Mobile rate plan, and services, or features you’ve chosen.</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 text-left">
+                <ul id="myPager" class="pagination"></ul>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html ng-app="tmobileApp">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" xmlns="http://www.w3.org/1999/html">
+        <title>New Screen</title>
+
+    <link href="css/bootstrap.min_v3.3.5.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/font-awesome_v4.4.0.min.css">
+    <link rel="stylesheet" type="text/css" href="css/pdp.css">
+
+    <script src="js/lib/jquery_v2.1.3.js"></script>
+
+    <script src="js/lib/bootstrap.min-v3.3.5.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-rc.0/angular.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-rc.0/angular-route.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular-resource.min.js"></script>
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/angular-filter/0.4.7/angular-filter.js"></script>
+
+
+    <!--<script src="js/myAppScript.js"></script>-->
+    <script src="js/script.js"></script>
+    <script src="js/lib/common.js"></script>
+    <script src="js/lib/dirPagination.js"></script>
+    <script src="js/factory.js" type="text/javascript"></script>
+    <script src="js/controllers.js" type="text/javascript"></script>
+    <script src="app.js" type="text/javascript"></script>
+
+    
+
+    <!--<link rel="stylesheet" type="text/css" media="screen" href="css/accessories-css/CSSreset.min.css" />-->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/accessories-css/als_demo.css" />
+    <script type="text/javascript" src="js/accessories-js/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/accessories-js/jquery.als-1.7.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#lista1").als({
+                visible_items: 5,
+                scrolling_items: 2,
+                orientation: "horizontal",
+                circular: "yes",
+                autoscroll: "yes",
+                interval: 5000,
+                speed: 500,
+                easing: "linear",
+                direction: "left",
+                start_from: 0
+            });
+        });
+        </script>
+
+</head>
+<body style="background-color: white" ng-controller="appcontroller">
+    <header>
+        <div class="col-lg-12 col-md-12 col-sm-12 hidden-xs padding_zero">
+            <img src="images/Screenshot%202015-12-18 10.29.50.png" class="img-responsive">
+            <!-- <img src="images/header.JPG" class="img-responsive">-->
+        </div>
+        <div class="hidden-lg hidden-md hidden-sm col-xs-12 padding_zero">
+            <img src="images/header_mob.jpg" class="img-responsive">
+        </div>
+    </header>
+    <div class="container header zero_margin">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <h3> LETS TALK CREDIT </h3>
+            <p> Give us your credit range for rough estimate of your up-front costs</p>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <div class=" col-lg-2 col-md-3 col-sm-3 col-xs-4 text-center">
+                <p class="circle" style="text-align: center; font-size: 10px; padding-top: 20px; ">AWESOME CREDIT </p>
+            </div>
+            <div class=" col-lg-2 col-md-3 col-sm-3 col-xs-4 text-center">
+                <p class="circle1" style="text-align: center; font-size: 10px; padding-top: 20px; ">SO SO CREDIT</p>
+            </div>
+            <div class=" col-lg-2 col-md-3 col-sm-3 col-xs-4 text-center">
+                <p class="circle1" style="text-align: center; font-size: 10px; padding-top: 20px;">FORGET CREDIT CHECK</p>
+            </div>
+        </div>
+    </div>
+    <div class="greyRow col-lg-12 col-md-12 col-sm-12 hidden-xs zero_margin ">
+        <p class="algCent"> Order with JUMP! On demand! So upfront + $5/mo x 18 mos. with eligible trade-in O.A.C Call 1-877-413-5903</p>
+    </div>
+
+    <div class="container">
+
+
+        <div class="row ">
+
+            <div class=" col-lg-6 col-md-6 col-sm-6 carousel" id="myCarousel">
+
+                <!-- slider -->
+                <div class="carousel-inner">
+                    <div class="active item img-responsive mobImage">
+                        <!-- item 1 -->
+                        <img alt="Apple iPhone 6s" title="Apple iPhone 6s" src="{{productData[0].FrontImage}}">
+                    </div> <!-- end item -->
+                    <div class="item img-responsive mobImage">
+                        <!-- item 2 -->
+                        <img alt="Apple iPhone 7s" title="Apple iPhone 6s" src="{{productData[0].LeftImage}}">
+                    </div> <!-- end item -->
+                    <div class="item img-responsive mobImage">
+                        <!-- item 3 -->
+                        <img alt="Apple iPhone 8s" title="Apple iPhone 6s" src="{{productData[0].BackImage}}">
+                    </div> <!-- end item -->
+                </div> <!-- end carousel inner -->
+
+                <ol class="carousel-indicators cirImage">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1" class=""></li>
+                    <li data-target="#myCarousel" data-slide-to="2" class=""></li>
+                </ol>
+
+                <a class="carousel-control left fontSize" href="#myCarousel" data-slide="prev"><img src="images/arrow_0_copy.jpg" /></a>
+                <a class="carousel-control right fontSize" href="#myCarousel" data-slide="next"><img src="images/arrow_0.jpg" /></a>
+                <!-- end slider -->
+            </div>
+
+            <div class=" col-lg-6 col-md-6 col-sm-6">
+
+                <h3>{{productData[0].Family}}</h3>
+                <p> <span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star-empty"></span> (54 Reviews)</p>
+                <div class="linebottom">
+                    <p class="Content-text">
+                        {{productData[0].Description}}...
+                        <a id="see" href="#credits"> <span class="more">More</span></a>
+                    </p>
+                    <div id="credits">
+                        <p>
+                            Whilst most Japanese people are aware of English swear words and want to know more, they're not quite sure on how they're used and the role they play.
+                            <a id="less" href="#less">Less</a>
+                        </p>
+                    </div>
+
+                </div>
+                <br>
+                <div class="linebottom">
+                    <span>Memory:{{productData[0].Memory}} GB</span>           <span class="memorySty">Color : {{productData[0].Color}}</span><br><br>
+                    <div class="btn-group" calss="memorySty1">
+                        <button type="button" class="btn ">64GB</button>
+                        <button type="button" data-toggle="dropdown" class="btn  dropdown-toggle"><span class="caret"></span></button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">16GB</a></li>
+                            <li><a href="#">32GB</a></li>
+                            <li><a href="#">128GB</a></li>
+                        </ul>
+                    </div>
+
+
+                    <span class="colorImg" style="padding-left:60px"><img class="image-box-color" src="images/Apple-iPhone-6s-Space-Gray.gif" height="24" width="24" alt="Space Gray"></span>
+                    <span class="colorImg"><img class="image-box-color" src="images/Apple-iPhone-6s-Plus-Gold.gif" height="24" width="24" alt="Space Gray"></span>
+                    <span class="colorImg"><img class="image-box-color" src="images/Apple-iPhone-6s-Plus-Rose-Gold.gif" height="24" width="24" alt="Space Gray"></span>
+                    <span class="colorImg"><img class="image-box-color" src="images/Apple-iPhone-6s-Silver.gif" height="24" width="24" alt="Space Gray"></span>
+                    <a id="moreCol" href="#morColors"> <span class="more">More </span></a>
+                    <div id="morColors" class="colorImg1 hide">
+                        <span class="colorImg" style="padding-left:60px"><img class="image-box-color" src="images/Apple-iPhone-6s-Space-Gray.gif" height="24" width="24" alt="Space Gray"></span>
+                        <span class="colorImg"><img class="image-box-color" src="images/Apple-iPhone-6s-Plus-Gold.gif" height="24" width="24" alt="Space Gray"></span>
+                        <span class="colorImg"><img class="image-box-color" src="images/Apple-iPhone-6s-Plus-Rose-Gold.gif" height="24" width="24" alt="Space Gray"></span>
+                        <span class="colorImg"><img class="image-box-color" src="images/Apple-iPhone-6s-Silver.gif" height="24" width="24" alt="Space Gray"></span>
+                        <a id="lessColors" href="#lessColors"> Less </a>
+                    </div>
+                </div>
+
+                <div>
+                    <label class="radio-inline">
+                        <input name="radioGroup" id="radio1" value="option1" checked="" class="colorRed" type="radio"> Monthtly Payment
+                    </label> <span class="glyphicon glyphicon-question-sign questionSymPadding"></span>
+                    <label class="radio-inline textPadding">
+                        <input name="radioGroup" id="radio2" value="option2" type="radio"> Retall Price
+                    </label>
+                </div>
+                <!--<input id="input-21a" value="0" type="number" class="rating" data-symbol="*" min=0 max=5 step=0.5 data-size="xl" >-->
+                <div>
+                    <p> <span class="font3Size colorRed"> <sup>$</sup>0 </span><span class="bottomText">Today</span><span class="font3Size colorRed"> / </span><span class="font3Size "><sup>$</sup>5 </span><span class="bottomText">Monthtly</span><span class="bottomText">(x 18 Months)</span> <span class="full-retail-price header5a font3Size colorImg" cursign="$">{{productData[0].FullPrice}}<sup class="super-decimal-price">99</sup></span></p>
+
+                </div>
+                <div class="linebottom"></div><br>
+                <div>
+
+                    <p>{{productData[0].Description}}</p>
+                    <p><button type="button" class="btn btn-primary btn-lg round">Add to Bag</button><span class="memorySty"> Need Help ?</span></p>
+                    <p>
+                        <span>$15.00 SIM Starter Kit <span class="glyphicon glyphicon-info-sign"></span></span> <br>
+                        <span>New device with iPhone 6s - the only thing that’s changed is everything </span>
+                    </p>
+                    <p class="loginText"><span>Already a Customer?</span> <a href="#"><span class="colorDeepPink colorImg">Login to My T-Mobile </span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+        <!-- start -->
+
+        <div class="col-lg-12 col-md-12 col-sm-12" style="padding-right: 0px; padding-left: 0px;">
+            <section class="features-nav features-nav-size-3">
+                <nav class="sections-nav">
+                    <ul id="anchorTabNav" class="nav nav-pills">
+                        <li style="border-right: lightgrey 1px groove;border-top: lightgrey 1px solid;border-bottom: lightgrey 1px solid;">
+
+                            <a href="#features" title="FEATURES">
+                                <div class="iconssprite"><span class="features-tab-icon"></span></div>
+                                <!--<img src="/content/dam/tmo-wem/global-assets/product/expanded-nav/features-cta.png" alt="FEATURES"/>-->
+                                FEATURES
+                            </a>
+                            <div class="shadow-caret"><i class="down-caret"></i></div>
+                        </li>
+
+
+                        <li class="product-review-ratings" style="border-right: lightgrey 1px solid; border-top: lightgrey 1px solid; border-bottom: lightgrey 1px solid;">
+
+                            <a href="#reviews" title="REVIEWS">
+                                <div class="iconssprite"><span class="reviews-tab-icon"></span></div>
+                                <!--<img src="/content/dam/tmo-wem/global-assets/product/expanded-nav/reviews-cta.png" alt="REVIEWS"/>-->
+                                REVIEWS
+                            </a>
+                            <div class="shadow-caret"><i class="down-caret"></i></div>
+                        </li>
+
+                        <li style="border-top: lightgrey 1px solid; border-bottom: lightgrey 1px solid;">
+
+                            <a href="#accessories" title="ACCESSORIES">
+                                <div class="iconssprite"><span class="accessories-tab-icon"></span></div>
+                                <!--<img src="/content/dam/tmo-wem/global-assets/product/expanded-nav/accessories-cta.png" alt="ACCESSORIES"/>-->
+                                ACCESSORIES
+                            </a>
+                            <div class="shadow-caret"><i class="down-caret"></i></div>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+        </div>
+
+        <!-- end -->
+        <div class="row" style="margin-right: 0px; border-bottom: 1px lightgrey solid;">
+            <div class="container">
+                <div id="features" class="box2 padding_zero" style="width: 100%; margin-left: 0px; margin-right: 0%;">
+                    <div class="col-lg-12 col-md-12 col-sm-12 box" style="margin-top: 2%;">
+
+                        <img src="images/features.jpg" class="img-responsive">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="container">
+        <div class="row1 product zero_margin">
+
+            <!--<div id="Specifications" class="row box3" style="width: 100%; margin-left: 0%; margin-right: 0%;">-->
+            <h3>Specifications</h3>
+            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <hr>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 text_bold">
+                    Display
+                </div>
+                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                    <ul>
+                        <li>4.7"</li>
+                        <li>1334 x 750 pixels</li>
+                    </ul>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <hr>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 text_bold">
+                    Size and Weight
+                </div>
+                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                    <ul>
+                        <li>5.4 x 2.64 x 0.28 inches</li>
+                        <li>5.04 ounces</li>
+                    </ul>
+                </div>
+                <div class="hidden-lg hidden-md hidden-sm col-xs-12">
+                    <img src="images/Apple-iPhone-6s-Specifications.JPG" class="img-responsive">
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <hr>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 text_bold">
+                    Operating System and Processor
+                </div>
+                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                    <ul>
+                        <li>iOS 9</li>
+                        <li>A9 Chip</li>
+                    </ul>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <hr>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 text_bold">
+                    Battery Life
+                </div>
+                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                    <ul>
+                        <li>Upto 14 hours talk time</li>
+                        <li>Upto 10 days standup time</li>
+                    </ul>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <hr>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 text_bold">
+                    Camera, Photos and Video
+                </div>
+                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                    <ul>
+                        <li>12-megapixel iSight Camera</li>
+                        <li>FaceTime HD Camera</li>
+                        <li>4K video Recording</li>
+                    </ul>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <hr>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 text_bold">
+                    Memory
+                </div>
+                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                    <ul>
+                        <li>16GB</li>
+                    </ul>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <hr>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 text_bold">
+                    Connectivity
+                </div>
+                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                    <ul>
+                        <li>Sync methods: Wi-Fi 802.11a/b/g/n/ac, Bluetooth 4.2, NFC</li>
+                        <li>4G Capable</li>
+                        <li>4G LTE Capable</li>
+                        <li>Wi-Fi Calling</li>
+                    </ul>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <hr>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 text_bold">
+                    GPS and Apps
+                </div>
+                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                    <ul>
+                        <li>GPS enabled</li>
+                    </ul>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <hr>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 text_bold">
+                    International
+                </div>
+                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                    <ul>
+                        <li>Quad Band GSM; LTE: 1, 2, 3, 4, 5, 6, 7, 8, 12, 13, 17, 18, 19, 20, 25, 26, 41; UMTS: Band I (2100), Band II (1900), Band IV (1700/2100), Band V (850), Band VIII (900)</li>
+                    </ul>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <hr>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 text_bold">
+                    Hearing Aid Compatibility
+                </div>
+                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                    <ul>
+                        <li>M3, T4</li>
+                    </ul>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <hr>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 text_bold">
+                    WEA Capable?
+                </div>
+                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                    <ul>
+                        <li>Yes</li>
+                    </ul>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <hr>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 text_bold">
+                    Mobile Pay
+                </div>
+                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                    <ul>
+                        <li>Compatible with Apple Pay</li>
+                    </ul>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <hr>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                <div class="col-lg-12 col-md-12 col-sm-12 hidden-xs">
+                    <img src="images/Apple-iPhone-6s-Specifications.JPG" class="img-responsive">
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <h4 class="text_bold">In The Box</h4>
+                    <ul class="text_bold">
+                        <li>iPhone 6s</li>
+                        <li>Apple EarPods with Remote and Mic</li>
+                        <li>Lightning to USB cable</li>
+                        <li>USB power adapter</li>
+                        <li>Documentation</li>
+                    </ul>
+                </div>
+                <div class="TMobile_Rounded_button_container">
+                    <button class="btn btn-lg prev_link">Download user manual</button>
+                </div>
+            </div>
+            <!--</div>-->
+        </div>
+    </div>
+
+    <div class="row1 product zero_margin" style="margin-right: 0px; border-bottom: 1px lightgrey solid; border-top: 1px lightgrey solid;">
+        <div class="container">
+            <div id="accessories" class="row box3" style="width: 100%; margin-left: 0%; margin-right: 0%;">
+                <h3>Accessories</h3>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 box">
+                    <div id="lista1" class="als-container">
+                        <span class="als-prev">
+                            <img src="images/accessories/thin_left_arrow_333.png" alt="prev" title="previous" /></span>
+                        <div class="als-viewport">
+                            <ul class="als-wrapper">
+                                <!-- <li class="als-item">
+                                    <img src="images/accessories/SUPM45667-large.png"/>iPhone 6/6s Case-Mate Naked Tough Case - West Village</li>
+                                <li class="als-item">
+                                    <img src="images/accessories/SUPM45118-large.png"/>Belkin Road RockStar™ 4-Port Passenger Car Charger</li>
+                                <li class="als-item">
+                                    <img src="images/accessories/SUPM45113-large.png"/>PhoneSuit Journey All-in-One Portable Charger - Black</li>
+                                <li class="als-item">
+                                    <img src="images/accessories/SUPM43650-large.png" />iphone-6s-04</li>
+                                <li class="als-item">
+                                    <img src="images/accessories/SUPM43512-large.png" />iPhone 6/6s Tech21 Impact Shield: Anti-Glare</li>
+                                <li class="als-item">
+                                    <img src="images/accessories/SUPM42640-large.png" />SONY MDR-X15 Wired Earbud - Black</li>
+                                <li class="als-item">
+                                    <img src="images/accessories/848447012497-large.png" />Beats® Powerbeats2™ Wireless In-ear Headphone - White</li> -->
+                            <li class="als-item">
+                                    <img src="images/accessories/carousel-apple-iphone-6s-space-gray-380x380-11.jpg" alt="mobile phone" title="mobile phone" />iphone-6s-09</li>
+                                <li class="als-item">
+                                    <img src="images/accessories/carousel-apple-iphone-6s-space-gray-380x380-11.jpg" alt="camera" title="camera" />iphone-6s-10</li>
+                                <li class="als-item">
+                                    <img src="images/accessories/carousel-apple-iphone-6s-space-gray-380x380-11.jpg" alt="music note" title="music note" />iphone-6s-10</li>
+                                <li class="als-item">
+                                    <img src="images/accessories/carousel-apple-iphone-6s-space-gray-380x380-11.jpg" alt="umbrella" title="umbrella" />iphone-6s-11</li>
+                                <li class="als-item">
+                                    <img src="images/accessories/carousel-apple-iphone-6s-space-gray-380x380-11.jpg" alt="television" title="television" />iphone-6s-12</li>
+                            </ul>
+                        </div>
+                        <span class="als-next">
+                            <img src="images/accessories/thin_right_arrow_333.png" alt="next" title="next" /></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row" style="margin-right: 0px; border-bottom: 1px lightgrey solid;">
+        <div class="container">
+            <div id="reviews" class="row box4" style="width: 100%; margin-left: 0%; margin-right: 0%;">
+                <div class="col-lg-12 col-md-12 col-sm-12 box">
+                    <h3 style="padding-left: 5%;">Reviews</h3>
+                    <img src="images/reviews.jpg" class="img-responsive">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row" style="margin-right: 0px; border-bottom: 1px lightgrey solid;">
+        <div class="container" ng-init="init()">
+            <div class="row box5 col-lg-12 col-md-12 col-sm-12" style="width: 100%; margin-left: 0%; margin-right: 0%;">
+                <div class="questions col-lg-12 col-md-12 col-sm-12" style="border-right: none;">
+                    <div>
+                        <h3 style="font-size:40px;line-height:48px;font-family:Arial">Questions on Shopping?</h3>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+                        <div class="panel-group ng-scope" id="accordion">
+                            <div class="panel panel-default" style="margin-top: 0px;" dir-paginate="item in QuestionsAnwsList | itemsPerPage:7">
+                                <div class="panel-heading title">
+                                    <p class="panel-title" style="font-size:18px;line-height:22px;font-family:Arial">
+                                        <a data-toggle="collapse" href="#collapse{{item.id}}" class="">{{item.QuestionName}}
+                                            <span class="pull-right clickable">
+                                                <i id="form_collapse_{{item.id}}" class="glyphicon glyphicon-chevron-down formcollapse"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                </div>
+                                <div id="collapse{{item.id}}" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        {{item.Answer}}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 text-left">
+                        <dir-pagination-controls max-size="5" direction-links="true" boundary-links="true"></dir-pagination-controls>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="hidden-xs padding_zero" style="margin-left: 0px; margin-right: 0px; position: relative; min-height: 1px;">
+            <img src="images/footer.png" class="img-responsive">
+        </div>
+        <div class="hidden-lg hidden-md hidden-sm col-xs-12 padding_zero">
+            <img src="images/footer_mob.JPG" class="img-responsive">
+        </div>
+    </footer>
+</body>
+</html>

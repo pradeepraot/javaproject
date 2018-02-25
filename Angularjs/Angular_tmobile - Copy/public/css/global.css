@@ -1,0 +1,53 @@
+.legal-text { font-size: x-small; padding: 0px 35px;}
+            .tMobileApp{ background-color: #F6F5F5;}
+            .whytmobile{ background-color: #FFFFFF; border-bottom: 1px dotted #808080;}
+            .whytmobile h3, a {color: #E20074;}
+            .whytmobile .content {padding: 10px 50px;}
+            .whytmobile .content-link{padding-top: 20px;}
+            .whytmobile .content-text {padding-top: 40px;}
+            .whytmobile .content-terms{ font-size: x-small; padding-top: 15px;}
+            .story_section{ margin: 20px -15px; border-bottom: 0px}
+            .top-head-links-left{
+                padding-left: 45px;
+            }
+            .top-head-links-right{
+                    padding-right: 50px;
+                    text-align: right;
+                }
+            .top-head-links a{
+                font-size: small;
+            } 
+            .link_section{
+              padding: 50px;
+            }
+            .link_text{
+                padding: 30px;
+                text-align: center;
+            }
+            
+            .tile_Container{
+                background-color: .#F6F5F5;
+            }
+            .banner_section{
+                padding: 0px;
+            }
+            .tile_active{
+                    box-shadow: 1px 1px 15px 5px #888888;
+                    height: 230px;
+            }
+            @media screen and (max-width:767px) {
+               .top-head-links-left{
+                    padding-left: 0px;
+                    padding-top: 5px;
+                    font-size: small;
+                }
+                .top-head-links a{
+                    padding: 5px;
+                }
+                .top-head-links-right{
+                    padding-right: 0px;
+                }  
+            }
+	h3 {
+		font-style:oblique;font-family:sans-serif
+		}

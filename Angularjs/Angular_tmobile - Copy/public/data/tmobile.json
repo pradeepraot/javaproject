@@ -1,0 +1,52 @@
+{
+    "data": {
+        "productdetails": [
+            { 
+                "SKU": 456734, 
+                "Family": "Apple iPhone 6s", 
+                "Description": "With 3D Touch, Live Photos, 7000 series aluminum, A9 chip, advanced cameras, 4.7-inch Retina HD display and so much more, you will see how - with iPhone 6s - the only thing that have changed is everything.", 
+                "Color": "Rose Gold", 
+                "Color Swatch": "Http://", 
+                "Memory":  16,
+                "MemoryUOM": "GB", 
+                "Manufacturer":  "Apple", 
+                "FullPrice":  "$ 649", 
+                "UpFront": "$  -", 
+                "FrontImage": "images/carousel-apple-iphone-6s-rose-gold-380x380-1.jpg",
+                "BackImage":  "images/carousel-apple-iphone-6s-rose-gold-380x380-3.jpg", 
+                "LeftImage":  "images/carousel-apple-iphone-6s-rose-gold-380x380-2.jpg",
+                "RightImage": "Http://", 
+                "ThumbNail": "Http://", 
+                "SpecImage":  "Http://", 
+                "Priority": 1
+            },
+            { 
+                "SKU": 456735, 
+                "Family": "Apple iPhone 6s", 
+                "Description": "With 3D Touch, Live Photos, 7000 series aluminum, A9 chip, advanced cameras, 4.7-inch Retina HD display and so much more, you’ll see how - with iPhone 6s - the only thing that’s changed is everything.", 
+                "Color": "Gold", 
+                "Color Swatch": "Http://", 
+                "Memory":  16, 
+                "MemoryUOM":  "GB", 
+                "Manufacturer":  "Apple",
+                "FullPrice":  "$ 649", 
+                "UpFront": "$  -", 
+                "FrontImage": "Http://",
+                "BackImage":  "Http://", 
+                "LeftImage":  "Http://",
+                "RightImage": "Http://", 
+                "ThumbNail": "Http://", 
+                "SpecImage":  "Http://", 
+                "Priority": 2
+            },
+            { "SKU": 456736, "Family": "Apple iPhone 6s", "Description": "With 3D Touch, Live Photos, 7000 series aluminum, A9 chip, advanced cameras, 4.7-inch Retina HD display and so much more, you’ll see how - with iPhone 6s - the only thing that’s changed is everything.", "Color": "White", "Color Swatch": "Http://", "Memory":  16, "MemoryUOM": "GB", "Manufacturer":  "Apple", "FullPrice":  "$ 649", "UpFront": "$  -", "FrontImage": "Http://","BackImage":  "Http://", "LeftImage":  "Http://","RightImage": "Http://", "ThumbNail": "Http://", "SpecImage":  "Http://", "Priority": 3},
+            { "SKU": 456738, "Family": "Apple iPhone 6s", "Description": "With 3D Touch, Live Photos, 7000 series aluminum, A9 chip, advanced cameras, 4.7-inch Retina HD display and so much more, you’ll see how - with iPhone 6s - the only thing that’s changed is everything.", "Color": "Gray", "Color Swatch": "Http://", "Memory":  32, "MemoryUOM":  "GB", "Manufacturer":  "Apple", "FullPrice":  "$ 749", "UpFront": "$  100", "FrontImage": "Http://","BackImage":  "Http://", "LeftImage":  "Http://","RightImage": "Http://", "ThumbNail": "Http://", "SpecImage":  "Http://", "Priority": 4},
+	        { "SKU": 456739, "Family": "Apple iPhone 6s", "Description": "With 3D Touch, Live Photos, 7000 series aluminum, A9 chip, advanced cameras, 4.7-inch Retina HD display and so much more, you’ll see how - with iPhone 6s - the only thing that’s changed is everything.", "Color": "Gold", "Color Swatch": "Http://", "Memory":  32, "MemoryUOM":  "GB", "Manufacturer":  "Apple",  "FullPrice":  "$ 749", "UpFront": "$  100", "FrontImage": "Http://","BackImage":  "Http://", "LeftImage":  "Http://","RightImage": "Http://", "ThumbNail": "Http://", "SpecImage":  "Http://", "Priority": 5},
+            { "SKU": 456740, "Family": "Apple iPhone 6s", "Description": "With 3D Touch, Live Photos, 7000 series aluminum, A9 chip, advanced cameras, 4.7-inch Retina HD display and so much more, you’ll see how - with iPhone 6s - the only thing that’s changed is everything.", "Color": "White", "Color Swatch": "Http://", "Memory":  32, "MemoryUOM":  "GB", "Manufacturer":  "Apple", "FullPrice":  "$ 749", "UpFront": "$  100", "FrontImage": "Http://","BackImage":  "Http://", "LeftImage":  "Http://","RightImage": "Http://", "ThumbNail": "Http://", "SpecImage":  "Http://", "Priority": 6},
+            { "SKU": 456741, "Family": "Apple iPhone 6s", "Description": "With 3D Touch, Live Photos, 7000 series aluminum, A9 chip, advanced cameras, 4.7-inch Retina HD display and so much more, you’ll see how - with iPhone 6s - the only thing that’s changed is everything.", "Color": "Gray", "Color Swatch": "Http://", "Memory":  128, "MemoryUOM":  "GB", "Manufacturer":  "Apple", "FullPrice":  "$ 849", "UpFront": "$  100", "FrontImage": "Http://","BackImage":  "Http://", "LeftImage":  "Http://","RightImage": "Http://", "ThumbNail": "Http://", "SpecImage":  "Http://", "Priority": 7},
+            { "SKU": 456742, "Family": "Apple iPhone 6s", "Description": "With 3D Touch, Live Photos, 7000 series aluminum, A9 chip, advanced cameras, 4.7-inch Retina HD display and so much more, you’ll see how - with iPhone 6s - the only thing that’s changed is everything.", "Color": "Gold", "Color Swatch": "Http://", "Memory":  128, "MemoryUOM":  "GB", "Manufacturer":  "Apple", "FullPrice":  "$ 849", "UpFront": "$  200", "FrontImage": "Http://","BackImage":  "Http://", "LeftImage":  "Http://","RightImage": "Http://", "ThumbNail": "Http://", "SpecImage":  "Http://", "Priority": 8},
+	        { "SKU": 456743, "Family": "Apple iPhone 6s", "Description": "With 3D Touch, Live Photos, 7000 series aluminum, A9 chip, advanced cameras, 4.7-inch Retina HD display and so much more, you’ll see how - with iPhone 6s - the only thing that’s changed is everything.", "Color": "White", "Color Swatch": "Http://", "Memory":  128, "MemoryUOM":  "GB", "Manufacturer":  "Apple", "FullPrice":  "$ 849", "UpFront": "$  200", "FrontImage": "Http://","BackImage":  "Http://", "LeftImage":  "Http://","RightImage": "Http://", "ThumbNail": "Http://", "SpecImage":  "Http://", "Priority": 9},
+            { "SKU": 456744, "Family": "Apple iPhone 6s", "Description": "With 3D Touch, Live Photos, 7000 series aluminum, A9 chip, advanced cameras, 4.7-inch Retina HD display and so much more, you’ll see how - with iPhone 6s - the only thing that’s changed is everything.", "Color": "Red", "Color Swatch": "Http://", "Memory":  16, "MemoryUOM":  "GB", "Manufacturer":  "Apple", "FullPrice":  "$ 849", "UpFront": "$  200", "FrontImage": "Http://","BackImage":  "Http://", "LeftImage":  "Http://","RightImage": "Http://", "ThumbNail": "Http://", "SpecImage":  "Http://", "Priority": 10}
+        ]
+    }
+}
